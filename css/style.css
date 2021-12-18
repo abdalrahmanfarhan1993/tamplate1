@@ -1,0 +1,247 @@
+/* start globle rules  */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family:"work Sans" ,sans-serif;
+}
+/* end globle rules  */
+.parent{
+    background-color: #eee;
+}
+
+.container{
+    padding-left:15px ;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    margin: auto;
+    
+}
+/* small  */
+@media (min-width:300px) {
+    .container{
+        width: 350px;
+    }
+    .title{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    
+    
+}
+/* medium  */
+@media (min-width:700px) {
+    .container{
+        width: 750px;
+    }
+    .title{
+        font-size: 50px;
+        margin-left: 10px;
+    }
+    
+}
+/* large  */
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+    
+}
+/* start header  */
+.header{
+    padding: 20px;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    width: 60px;
+}
+.header .link{
+    position: relative;
+}
+.header .link .icon{
+    width: 30px ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header .link .icon span{
+    background-color: #333;
+    margin-bottom: 5px;
+}
+.header .link .icon span:first-child{
+height: 2px;
+width: 100%;
+}
+.header .link .icon span:nth-child(2){
+height: 2px;
+width: 60%;
+transition: .3s;
+}
+.header .link .icon span:last-child{
+height:2px;
+width: 100%;
+}
+.header .link .icon {
+    justify-content:flex-end;
+}
+.header .link:hover .icon span:nth-child(2){
+    width: 100%;
+}
+.header .link ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    
+}
+.header .link:hover ul{
+    display:block ;
+}
+.header .link ul::before{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color:transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+
+}
+.header .link ul a{
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: #222;
+    transition: .3s;
+}
+.header .link ul a:hover{
+    padding-left: 25px;
+
+}
+.header .link ul li:not(:last-child) a{
+    border-bottom: 1px solid #ddd;
+}
+.title{
+font-weight: bold;
+color: lightseagreen;
+}
+.fab{
+    color: lightseagreen;
+font-size: 50px;}
+
+
+/* end header */
+/* start landing */
+.landing{
+    background-image: url(/img/brady-stoeltzing-O-v-zobf1vM-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    
+}
+.landing .text{
+  
+   margin-top: 150px;
+    text-align: center;
+}
+.landing h1{
+    margin: 20px;
+    font-size: 50px;
+    color:rgb(90, 90, 90);
+}
+.landing p{
+    font-weight: bold;
+    color: rgb(41, 150, 212);
+    font-size: 20px;
+}
+/* end landing */
+
+
+/* start services */
+.text-ser{
+    margin-top: 20px;
+    text-align: center;
+}
+.text-ser h1{
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(189, 185, 185);
+}
+.text-ser p{
+
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(39, 38, 38);
+    margin-top: -35px;
+}
+.services{
+    margin-top: 50px;
+}
+/* end services */
+/* start portofolio */
+.por{
+    margin-bottom: 50px;
+}
+.portefolio{
+    width: 65%;
+    margin: auto;
+    
+}
+/* end portofolio */
+/* start About */
+.img-about{
+    border-radius: 30px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+.about .infi h2{
+   color: rgb(102, 97, 97);
+   font-weight: bold;
+}
+.about .infi h2 .fas{
+    margin-right: 10px;
+
+}
+.about .infi h1{
+    font-weight: bold;
+}
+/* end About */
+.con a i{
+    margin-left: 20px;
+}
+.email{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.foot{
+    text-align: center;
+    background-color: lightskyblue;
+    height: 50px;
+ 
+}
+.foot p{
+  margin-top: 20px;
+}
+.btu{
+    background-color: lightskyblue;
+    border-radius: 10px;
+    border: none;
+}
